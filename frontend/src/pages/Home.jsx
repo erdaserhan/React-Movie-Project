@@ -59,7 +59,7 @@ function Home() {
 
             {loading ? ( <div>Loading...</div> 
             ) : (
-                <div className="movie-grid">
+                <div className="movies-grid">
                 {movies.map((movie) => movie.title.toLowerCase().startsWith(searchQuery) && (
                     <MovieCard key={movie.id} movie={movie} />
                 ))}
